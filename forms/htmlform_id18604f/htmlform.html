@@ -1,0 +1,199 @@
+<!DOCTYPE html><html><head>
+		<title>HTML Form UK contact</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../../../resources/css/validform.custom.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../resources/libraries/htmlform_js_libs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../../resources/libraries/ajaxfileupload.js"></script>
+		<style>
+            input.vf__button {float:left;}
+            body {width:600px; margin:0px}
+            form.validform fieldset.main_fieldset {background-color:#e9f3fb}
+            form.validform label {color:#000000}
+            h1 {color:#000000}
+            form.validform .vf__description {color:#000000}
+            form.validform .vf__notice {color:#000000}
+            form.validform .vf__tip {color:#000000}
+            input.vf__button {color:#000000}
+            #element_50b90bc8b27fd {width:180px;}
+            .fieldlabel_block {width:160px;}
+            #element_50b913e880eda {width:150px;}
+            #element_50b9155e485af {width:341px;
+            height:50px;}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+            // <![CDATA[
+            if(parent.document.getElementById('htmlformcomloader_id18604f')) {
+                if(parent.document.getElementById('loadinghtmlformcom_id18604f')){
+                    parent.document.getElementById('htmlformcomloader_id18604f').removeChild(parent.document.getElementById('loadinghtmlformcom_id18604f'));
+                }
+                if(parent.document.getElementById('rotatorhtmlformcom_id18604f')) {  
+                    parent.document.getElementById('htmlformcomloader_id18604f').removeChild(parent.document.getElementById('rotatorhtmlformcom_id18604f'));
+                }
+            }
+            $(document).ready(function() {
+                if(parent.document.getElementById('htmlformcom_wp_loader_id18604f')){
+                    $("#poweredhtmlformcom").remove();
+                }
+                $("#htmlform").width(600);
+                $("#htmlform").css('overflow','hidden');
+                //var w = parseInt($("#htmlform").css('width'));
+                var w = 600;
+                var navlb_space = 2*(5 + parseInt($('#htmlform').find('.main_fieldset:first').css('padding-right')));
+                $('.field_block').each(function(){
+                    var label = $(this).children(':first-child').find('.fieldlabel_block:first').find('label:first');
+                    var w_label = parseInt(label.css('width')) + parseInt(label.css('padding-left')) + parseInt(label.css('padding-right')) + parseInt(label.css('margin-right'));
+                    $(this).children(':first-child').find('.fielddesc_block:first').width(w-w_label-navlb_space-2 );
+                    $(this).width(w-navlb_space+2);
+                    $(this).css('overflow','hidden');
+                }
+                );
+                $('.embd_object').each(function(){
+                    var w_margin = parseInt($(this).css('margin-left'));
+                    $(this).width(w-navlb_space-w_margin-2);
+                    //alert(w-navlb_space-w_margin-2);
+                    $(this).css('overflow','hidden');
+                }
+                );
+                resizeParentIframe();
+                $('#recaptcha_logo').remove();
+                $('#recaptcha_tagline').remove();
+                $.datepicker.setDefaults($.datepicker.regional['en']);
+                $('.datepicker').datepicker({ dateFormat: 'dd MM yy', duration: 'fast', changeMonth:true, changeYear:true, gotoCurrent:true, showOtherMonths:true ,yearRange: '1920:2020' });
+                $('.datepicker').disablekeyboard();
+                // Notice the use of the each() method to acquire access to each elements attributes
+                $('label[data-tooltip]').livequery(function()
+                {
+                    if ($(this).attr('data-tooltip')) {
+                        $(this).qtip({
+                            content: $(this).attr('data-tooltip'), // Use the tooltip attribute of the element for the content
+                            style: 'light' // Give it a crea mstyle to make it stand out
+                        });
+                    }
+                });
+            });
+            $(function(){
+                var objForm = new ValidForm("htmlform", "One or more errors occurred. Check the marked fields and try again.");
+                objForm.addElement('element_50b90bc8b27fd', 
+                'Name',
+                ''
+                , 
+                false, 
+                9000,
+                null,
+                '',
+                'Enter only letters, numbers and punctuation symbols.',
+                'This field is required.', 
+                'The value is the hint value. Enter your own value.', 
+                'Your input is too short. A minimum of  characters or digits are allowed.', 
+                'Your input is too long. A maximum of  characters or digits are allowed.');
+                objForm.addElement('element_50b913e880eda', 
+                'E-mail',
+                /^[^@\s]+@([-a-z0-9]+\.)+[a-z]{2,}$/i
+                , 
+                false, 
+                9000,
+                null,
+                '',
+                'For emails use the format name@domain.ext',
+                'This field is required.', 
+                'The value is the hint value. Enter your own value.', 
+                'Your input is too short. A minimum of  characters or digits are allowed.', 
+                'Your input is too long. A maximum of  characters or digits are allowed.');
+                objForm.addElement('element_50b9155e485af', 
+                'Enter your message here',
+                '',
+                false, 
+                9000,
+                null,
+                '',
+                'Enter only letters, numbers and punctuation symbols.',
+                'This field is required.', 
+                'The value is the hint value. Enter your own value.', 
+                'Your input is too short. A minimum of  characters or digits are allowed.', 
+                'Your input is too long. A maximum of  characters or digits are allowed.');
+            });
+            // ]]></script>
+
+        
+<form id="htmlform" method="get" enctype="multipart/form-data" action="../../form_processor.php" class="validform">
+				<fieldset class="main_fieldset">
+				<div class="vf__description">
+					<p>Please write your inquiry or comment below - or call us on 0045 2349 5880</p>
+				</div>
+				<div class="formbody">
+					<ol>
+					<li>
+						<div class="field_block">
+							<div class="vf__multifield vf__optional">
+								<div class="fieldlabel_block">
+									<label>
+									Name, E-mail</label>
+								</div>
+								<div class="fielddesc_block">
+									<input type="text" name="element_50b90bc8b27fd" value="" id="element_50b90bc8b27fd" data-label="Name" class="vf__text">
+									<input type="text" name="element_50b913e880eda" value="" id="element_50b913e880eda" data-label="E-mail" class="vf__text">
+									<img style="margin-left:5px; margin-right:10px; vertical-align: middle; " src="../../../resources/images/icons/email_field.png" alt="Email">
+									<span class="vf__tip">
+									</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="field_block">
+							<div class="vf__optional">
+								<div class="fieldlabel_block">
+									<label>
+									Enter your message here</label>
+								</div>
+								<div class="fielddesc_block">
+									<textarea name="element_50b9155e485af" cols="90" rows="12" data-label="Enter your message here" id="element_50b9155e485af" class="vf__text"></textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fieldcontrol_block">
+							<div class="vf__navigation">
+								<input type="hidden" name="vf__dispatch" value="htmlform">
+								<input type="hidden" name="disableresizing" value="0">
+								<input type="submit" name="element_50b9149855dcb" value="Send inquiry" class="vf__button">
+							</div>
+						</div>
+					</li>
+					</ol>
+				</div>
+				</fieldset>
+			</form>
+			<div class="validating_space" id="validating_space" style="width: 100%;">
+			</div>
+			<script type="text/javascript">
+            // <![CDATA[
+            function resizeParentIframe() {
+                var w_fieldset = parseInt($(".main_fieldset").css('width'));
+                var w_client = document.body.clientWidth;
+                var w_resize = Math.max(w_fieldset,w_client);
+                try{
+                    $("body").css('width',w_resize);
+                    $("#htmlform").css('width',w_resize);  
+                    parent.document.getElementById('myiframe_id18604f').style.height = (document.body.clientHeight+2)+'px';
+                    parent.document.getElementById('myiframe_id18604f').style.width = (w_resize+2)+'px';
+                }
+                catch(error) {}
+            }
+            // ]]></script>
+
+        
+
+<script type="text/javascript" src="../../../resources/libraries/jquery.qtip-1.0.min.js"></script>
+    
+		
+
+</body></html>

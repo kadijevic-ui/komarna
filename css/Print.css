@@ -1,0 +1,226 @@
+div {}
+
+/* overall style */
+body {
+ color: black ;
+ font-size: 10pt ;
+ font-family: Arial, sans-serif ;
+ margin: 0 ;
+ background-color: white ; 
+ background-repeat: no-repeat;
+}
+
+/* central area of screen */
+.vcard { display: none; }
+.normal {display: inline ;}
+
+.breakhere {page-break-before: always}
+
+.noprint { display: none ;}
+
+/* header */
+.header {background-repeat: no-repeat;}
+
+/* header variable text*/
+.header p {
+ font-size: 10pt ;
+ font-weight: bold;
+ margin: 0;
+}
+
+.footer {
+ text-align: center;
+ font-size: 8pt  
+}
+
+.footer p {
+ font-size: 8pt ;
+ font-weight: bold;
+}
+
+.noPrint {display: none ; 
+ color: #000000 ;
+ background-color: #ffffff ; 
+ font-size: 10pt ;
+}
+.left {
+ display: none ;
+}
+
+.left ul {
+ display: none ;
+}
+
+.left ul li {
+ display: none ;
+}
+
+.left ul li a:link, .left ul li a:visited {
+ display: none ;
+}
+
+.left ul li a:link{
+ display: none ;
+}
+
+.left ul li a:hover {
+display: none ;
+}
+
+/* list items */
+ul {
+ text-align: justify;
+}
+
+li {
+ font-size: 10pt ;
+}
+
+/* definition of standard headings and text */
+h1 {
+ font-size: 10pt ;
+ text-align: left ;
+ clear: left ;
+ font-weight: bold;
+}
+
+h2 {
+ font-size: 10pt ;
+ text-align: center;
+ font-weight: bold;
+ clear: both ;
+}
+
+h3 {
+ font-size: 10pt ;
+ text-align: left;
+ clear: left ;
+ font-weight: bold;
+}
+
+
+h4 {
+ font-size: 10pt ;
+ text-align: center;
+ clear: both ;
+ font-weight: bold;
+}
+
+h5 {
+ font-size: 10pt ;
+ text-align: left;
+ clear: left ;
+ font-weight: bold;
+}
+
+h6 {
+ font-size: 10pt ;
+ text-align: center;
+ clear: both ;
+ font-weight: bold;
+}
+
+p {
+ font-size: 10pt ;
+ text-align: left;
+ line-height: 1em;
+}
+
+p.bold-p {
+ font-family: Arial, sans-serif;
+ font-weight: bold;
+ text-align: left;
+ font-style: normal ;
+ font-size: 10pt ;
+ padding-bottom: 5pt;
+ margin: 0;
+}
+
+p.left-p {
+ font-size: 10pt ;
+ text-align: left;
+ line-height: 1em;
+ clear: left ;
+}
+
+p.right-p {
+ font-size: 10pt ;
+ text-align: left;
+ line-height: 1em;
+ clear: right ;
+}
+
+p.clear-p {
+ font-size: 10pt ;
+ text-align: left;
+ line-height: 1em;
+ clear: both ;
+}
+
+BLOCKQUOTE {
+ font-size: 10pt ;
+ text-align: left;
+ line-height: 1em;
+}
+
+/* links in text */
+a {
+ text-decoration: underline ; 
+ color: black ;
+ font-size: 10pt ;
+ font-family: Arial, sans-serif ;
+ background-color: white ;  
+ }
+
+a.properties {
+ text-decoration: underline ; 
+ color: black ;
+ font-size: 10pt ;
+ font-family: Arial, sans-serif ;
+ background-color: white ;  
+ }
+
+a:link { 
+ text-decoration: underline ; 
+ color: black ;
+ font-size: 10pt ;
+ font-family: Arial, sans-serif ;
+ background-color: white ;   
+ }
+
+/* image definitions */
+
+.imageframe {
+  margin: 5pt 5pt 5pt 5pt;
+  position: relative;
+}
+
+.imageleft {
+  margin: 10pt 10pt 10pt 5pt;
+  position: relative;
+  float: left;
+  clear: left;
+}
+
+.imageright {
+  margin: 10pt 5pt 10pt 10pt;
+  position: relative;
+  float: right;
+  clear: right;
+}
+
+.sorry {
+ font-size: 10pt ;
+ text-align: left ;
+ font-weight: bold;
+}
+.small {
+ font-size: 8pt ;
+ text-align: left ;
+}
+.tabletext {
+ font-size: 0.8em;
+ text-decoration: none;
+ text-align: left ;
+}
+

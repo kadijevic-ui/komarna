@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Croatia holiday accommodation. Rent self-catering vacation.</title> 
+    <!-- THEME ROLLER CSS -->
+    <link rel="stylesheet" href="../css/themes/custom.css">
+    <link rel="stylesheet" href="../css/themes/custom.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css">
+    <!-- END THEME ROLLER CSS -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <!-- FLEXSLIDER CSS AND JSCRIPT FILES -->
+	<link rel="stylesheet" href="../flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="../jquery.flexslider.js"></script>
+    <!-- END FLEXSLIDER CSS AND JSCRIPT FILES -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- FLEXSLIDER JS CODE -->
+	<script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+	</script>
+	<!-- END FLEXSLIDER JS CODE -->
+
+<!-- Contact Form Script-->
+<script>
+$(document).ready(function(){
+ 
+$('#submit').click(function(){
+ 
+$.post("send.php", $("#mycontactform").serialize(),  function(response) {
+$('#success').html(response);
+//$('#success').hide('slow');
+});
+return false;
+ 
+});
+ 
+});
+</script>
+<!-- End Contact Form Script-->
+
+
+</head>
+
+<body>
+
+
+<div data-role="page" data-add-back-btn="true" data-theme="a">
+
+
+
+<!-- Page Header -->
+	<div data-role="header">
+    	<a href="../index.html" data-icon="back" rel="external">Back</a>
+		<h1>Contact</h1>
+	</div>
+<!-- End Page Header -->
+
+
+<!-- Page Content -->
+	<div data-role="content">	
+
+<h3 class="contact-us-font">Contact Us</h3>
+<p>Please write your inquiry or comment below - or call us by pressing the button bellow</p>
+<br>
+<a data-role="button" href="tel:004523495880" rel="external">Call Us</a>
+<br>
+<form action="" method="post" id="mycontactform" autocomplete="off">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name"><br>
+<label for="email">Email:</label>
+<input type="text" name="email" id="email"><br>
+<label for="message">Your Message:</label>
+<textarea name="message" id="message"></textarea><br>
+<input type="button" value="Send Message" id="submit"><div id="success"></div>
+</form>   
+            	
+	</div>
+<!-- End Page Content -->
+<br>
+<br>
+<!-- Page Footer --> 
+	<div data-role="footer" class="nav-footer-styling">
+		<div data-role="navbar" class="nav-footer-styling" data-grid="c">
+		<ul>
+			<li><a href="../index.html" id="home" data-icon="custom" data-transition="slidedown" rel="external">Home</a></li>
+			<li><a href="../tedo.html" id="menu" data-icon="custom" data-transition="slidedown" rel="external">Tedo</a></li>
+			<li><a href="../prices.html" id="specials" data-icon="custom" data-transition="slidedown" rel="external">Prices</a></li>
+			<li><a href="../contact.html" id="call" data-icon="custom">Call Us</a></li>
+		</ul>
+		</div>
+	</div>
+<!-- End Page Footer --> 
+
+
+
+</div>
+
+
+
+
+
+
+</body></html>
